@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BD089DB9-F171-4494-B309-5344F078A696}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Platformer2</RootNamespace>
+    <AssemblyName>Platformer2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Icon.png" />
+    <None Include="Content\Backgrounds\Layer0_0.png" />
+    <None Include="Content\Backgrounds\Layer0_1.png" />
+    <None Include="Content\Backgrounds\Layer0_2.png" />
+    <None Include="Content\Backgrounds\Layer1_0.png" />
+    <None Include="Content\Backgrounds\Layer1_1.png" />
+    <None Include="Content\Backgrounds\Layer1_2.png" />
+    <None Include="Content\Backgrounds\Layer2_0.png" />
+    <None Include="Content\Backgrounds\Layer2_1.png" />
+    <None Include="Content\Backgrounds\Layer2_2.png" />
+    <None Include="Content\Fonts\Hud.spritefont" />
+    <None Include="Content\Levels\0.txt" />
+    <None Include="Content\Levels\1.txt" />
+    <None Include="Content\Levels\2.txt" />
+    <None Include="Content\Overlays\you_died.png" />
+    <None Include="Content\Overlays\you_lose.png" />
+    <None Include="Content\Overlays\you_win.png" />
+    <None Include="Content\Sounds\ExitReached.wma" />
+    <None Include="Content\Sounds\GemCollected.wma" />
+    <None Include="Content\Sounds\MonsterKilled.wma" />
+    <None Include="Content\Sounds\Music.wma" />
+    <None Include="Content\Sounds\PlayerFall.wma" />
+    <None Include="Content\Sounds\PlayerJump.wma" />
+    <None Include="Content\Sounds\PlayerKilled.wma" />
+    <None Include="Content\Sounds\Powerup.wma" />
+    <None Include="Content\Sprites\.DS_Store" />
+    <None Include="Content\Sprites\Gem.png" />
+    <None Include="Content\Sprites\MonsterA\Idle.png" />
+    <None Include="Content\Sprites\MonsterA\Run.png" />
+    <None Include="Content\Sprites\MonsterB\Idle.png" />
+    <None Include="Content\Sprites\MonsterB\Run.png" />
+    <None Include="Content\Sprites\MonsterC\Idle.png" />
+    <None Include="Content\Sprites\MonsterC\Run.png" />
+    <None Include="Content\Sprites\MonsterD\Idle.png" />
+    <None Include="Content\Sprites\MonsterD\Run.png" />
+    <None Include="Content\Sprites\Player\Celebrate.png" />
+    <None Include="Content\Sprites\Player\Die.png" />
+    <None Include="Content\Sprites\Player\Idle.png" />
+    <None Include="Content\Sprites\Player\Jump.png" />
+    <None Include="Content\Sprites\Player\Run.png" />
+    <None Include="Content\Tiles\BlockA0.png" />
+    <None Include="Content\Tiles\BlockA1.png" />
+    <None Include="Content\Tiles\BlockA2.png" />
+    <None Include="Content\Tiles\BlockA3.png" />
+    <None Include="Content\Tiles\BlockA4.png" />
+    <None Include="Content\Tiles\BlockA5.png" />
+    <None Include="Content\Tiles\BlockA6.png" />
+    <None Include="Content\Tiles\BlockB0.png" />
+    <None Include="Content\Tiles\BlockB1.png" />
+    <None Include="Content\Tiles\Exit.png" />
+    <None Include="Content\Tiles\Platform.png" />
+    <None Include="Content\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libopenal.so.1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\soft_oal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libSDL2-2.0.so.0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SDL2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MonoGame.Framework.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libopenal.1.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libSDL2-2.0.0.dylib">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Backgrounds\" />
+    <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\Levels\" />
+    <Folder Include="Content\Overlays\" />
+    <Folder Include="Content\Sounds\" />
+    <Folder Include="Content\Sprites\" />
+    <Folder Include="Content\Tiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+</Project>

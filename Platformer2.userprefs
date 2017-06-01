@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{BD089DB9-F171-4494-B309-5344F078A696}|Default">
+  <MonoDevelop.Ide.ItemProperties.Platformer2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Platformer2/Game1.cs">
+    <Files>
+      <File FileName="Platformer2/Game1.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
