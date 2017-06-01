@@ -39,9 +39,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Animation.cs" />
+    <Compile Include="View\AnimationPlayer.cs" />
+    <Compile Include="View\Circle.cs" />
+    <Compile Include="View\Gem.cs" />
+    <Compile Include="View\RectangleExtensions.cs" />
+    <Compile Include="View\Tile.cs" />
+    <Compile Include="Model\Level.cs" />
     <Compile Include="Controller\PlatformerGame.cs" />
     <Compile Include="Model\Enemy.cs" />
-    <Compile Include="Model\Level.cs" />
     <Compile Include="Model\Player.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +104,9 @@
     <None Include="Content\Tiles\Exit.png" />
     <None Include="Content\Tiles\Platform.png" />
     <None Include="Content\.DS_Store" />
+    <None Include="View\Background.png" />
+    <None Include="View\Game.ico" />
+    <None Include="View\GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -148,7 +157,6 @@
     <Folder Include="Content\Sounds\" />
     <Folder Include="Content\Sprites\" />
     <Folder Include="Content\Tiles\" />
-    <Folder Include="New Folder\" />
     <Folder Include="Model\" />
     <Folder Include="View\" />
     <Folder Include="Controller\" />

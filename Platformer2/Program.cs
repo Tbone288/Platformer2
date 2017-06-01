@@ -11,7 +11,7 @@ using UIKit;
 #endif
 #endregion
 
-namespace Platformer2
+namespace Platformer
 {
 #if __IOS__ || __TVOS__
     [Register("AppDelegate")]
@@ -20,14 +20,14 @@ namespace Platformer2
 	static class Program
 #endif
 	{
-		private static PlatformerGame game;
+		private static PlatformerGame platformer;
 
 		internal static void RunGame()
 		{
-			game = new PlatformerGame();
-			game.Run();
+			platformer = new PlatformerGame();
+			platformer.Run();
 #if !__IOS__ && !__TVOS__
-			game.Dispose();
+			platformer.Dispose();
 #endif
 		}
 

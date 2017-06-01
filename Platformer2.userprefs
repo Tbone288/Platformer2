@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{BD089DB9-F171-4494-B309-5344F078A696}|Default">
-  <MonoDevelop.Ide.ItemProperties.Platformer2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Platformer2/Model/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Platformer2/Controller/PlatformerGame.cs">
     <Files>
-      <File FileName="Platformer2/Controller/PlatformerGame.cs" Line="38" Column="23" />
-      <File FileName="Platformer2/Model/Enemy.cs" Line="1" Column="1" />
-      <File FileName="Platformer2/Model/Level.cs" Line="1" Column="1" />
-      <File FileName="Platformer2/Model/Player.cs" Line="1" Column="1" />
+      <File FileName="Platformer2/Program.cs" Line="14" Column="21" />
+      <File FileName="Platformer2/Controller/PlatformerGame.cs" Line="93" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -14,4 +11,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Platformer PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
