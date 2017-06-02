@@ -50,5 +50,8 @@
     <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Tiles/BlockB1.png</File>
     <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Tiles/Exit.png</File>
     <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Tiles/Platform.png</File>
+    <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Sprites/Player/playerSprite.png</File>
+    <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Sprites/MonsterA/monsterAsprite.png</File>
+    <File>/Users/todo3858/Documents/GameDev/Platformer2/Platformer2/Content/Sprites/MonsterB/monsterBsprite.png</File>
   </SourceFiles>
 </SourceFileCollection>

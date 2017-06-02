@@ -100,8 +100,8 @@ namespace Platformer
         {
             // Load animations.
             spriteSet = "Sprites/" + spriteSet + "/";
-            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Run"), 0.1f, true);
-            idleAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "Idle"), 0.15f, true);
+            runAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "MonsterAsprite"), 0.1f, true);
+            idleAnimation = new Animation(Level.Content.Load<Texture2D>(spriteSet + "MonsterBsprite"), 0.15f, true);
             sprite.PlayAnimation(idleAnimation);
 
             // Calculate bounds within texture size.
